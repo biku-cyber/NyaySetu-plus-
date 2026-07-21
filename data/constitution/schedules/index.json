@@ -1,0 +1,16 @@
+[
+    {
+        "id": "schedule-1",
+        "number": 1,
+        "titleAs": "প্ৰথম অনুসূচী",
+        "titleEn": "First Schedule",
+        "descriptionAs": "ৰাজ্য আৰু ইউনিয়ন ক্ষেত্ৰসমূহ"
+    },
+    {
+        "id": "schedule-2",
+        "number": 2,
+        "titleAs": "দ্বিতীয় অনুসূচী",
+        "titleEn": "Second Schedule",
+        "descriptionAs": "ৰাষ্ট্ৰপতি, ৰাজ্যপাল, সংসদ সদস্য আদিৰ উপলব্ধি"
+    }
+]
