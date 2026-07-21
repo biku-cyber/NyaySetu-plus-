@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="as">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অফলাইন — ন্যায়সেতু</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Noto Sans Assamese', sans-serif;
+            background: #faf9f6;
+            color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+            text-align: center;
+        }
+        .offline-container { max-width: 400px; }
+        .offline-icon { width: 80px; height: 80px; margin-bottom: 1.5rem; opacity: 0.6; }
+        h1 { font-family: 'Noto Serif Assamese', serif; font-size: 1.5rem; margin-bottom: 0.75rem; color: #1a2332; }
+        p { font-size: 0.95rem; color: #555; line-height: 1.6; margin-bottom: 1.5rem; }
+        button {
+            background: #1a2332; color: #fff; border: none; padding: 0.75rem 1.5rem;
+            border-radius: 8px; font-size: 0.95rem; cursor: pointer;
+            font-family: 'Noto Sans Assamese', sans-serif;
+        }
+        button:hover { background: #2a3542; }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <img src="/assets/icons/offline.svg" alt="" class="offline-icon">
+        <h1>ইণ্টাৰনেট সংযোগ নাই</h1>
+        <p>আপোনাৰ ডিভাইচত ইণ্টাৰনেট সংযোগ নাই। সংযোগ পুনৰুদ্ধাৰ কৰক আৰু পুনৰ চেষ্টা কৰক।</p>
+        <button onclick="window.location.reload()">পুনৰ চেষ্টা কৰক</button>
+    </div>
+</body>
+</html>
