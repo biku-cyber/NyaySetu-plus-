@@ -1,0 +1,37 @@
+{
+    "id": "part-1",
+    "number": 1,
+    "titleAs": "সংঘ আৰু ইয়াৰ ক্ষেত্ৰ",
+    "titleEn": "The Union and its Territory",
+    "descriptionAs": "এই ভাগত ভাৰতৰ নাম, ক্ষেত্ৰ আৰু নতুন ৰাজ্য গঠনৰ বিষয়ে উল্লেখ কৰা হৈছে।",
+    "articles": [
+        {
+            "id": "article-1",
+            "number": 1,
+            "titleAs": "ভাৰতৰ নাম আৰু ক্ষেত্ৰ",
+            "titleEn": "Name and territory of the Union",
+            "summaryAs": "ভাৰত, অৰ্থাৎ India, ৰাজ্যসমূহৰ সংঘ হ'ব।"
+        },
+        {
+            "id": "article-2",
+            "number": 2,
+            "titleAs": "নতুন ৰাজ্য গঠন আৰু প্ৰৱেশ",
+            "titleEn": "Admission or establishment of new States",
+            "summaryAs": "সংসদে আইনৰ দ্বাৰা ভাৰতৰ ক্ষেত্ৰত নতুন ৰাজ্য গঠন কৰিব পাৰে।"
+        },
+        {
+            "id": "article-3",
+            "number": 3,
+            "titleAs": "নতুন ৰাজ্য গঠন আৰু ৰাজ্যৰ ক্ষেত্ৰ, সীমা বা নাম পৰিবৰ্তন",
+            "titleEn": "Formation of new States and alteration of areas, boundaries or names of existing States",
+            "summaryAs": "সংসদে ৰাজ্যৰ সীমা বা নাম সলনি কৰিব পাৰে।"
+        },
+        {
+            "id": "article-4",
+            "number": 4,
+            "titleAs": "অনুচ্ছেদ ২ আৰু ৩ৰ অধীনত প্ৰণয়ন কৰা আইন",
+            "titleEn": "Laws made under articles 2 and 3 to provide for amendment of First and Fourth Schedules",
+            "summaryAs": "প্ৰথম আৰু চতুৰ্থ অনুসূচী সংশোধনৰ ব্যৱস্থা।"
+        }
+    ]
+}
