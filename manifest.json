@@ -1,0 +1,56 @@
+{
+    "name": "ন্যায়সেতু — NyaySetu",
+    "short_name": "ন্যায়সেতু",
+    "description": "ভাৰতৰ সংবিধান আৰু প্ৰধান আইনসমূহৰ অসমীয়া ডিজিটেল আইনী গ্ৰন্থাগাৰ",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#faf9f6",
+    "theme_color": "#1a2332",
+    "lang": "as",
+    "dir": "ltr",
+    "categories": ["education", "reference", "books"],
+    "icons": [
+        {
+            "src": "/assets/icons/icon-72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icons/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icons/icon-128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/screenshots/home-light.png",
+            "sizes": "1284x2778",
+            "type": "image/png",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/screenshots/home-dark.png",
+            "sizes": "1284x2778",
+            "type": "image/png",
+            "form_factor": "narrow"
+        }
+    ]
+}
