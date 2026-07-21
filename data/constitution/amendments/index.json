@@ -1,0 +1,20 @@
+[
+    {
+        "id": "amendment-1",
+        "number": 1,
+        "fullName": "The Constitution (First Amendment) Act, 1951",
+        "titleAs": "প্ৰথম সংশোধনী",
+        "titleEn": "First Amendment",
+        "year": 1951,
+        "subjectAs": "সম্পত্তি অধিকাৰ আৰু ভাষণৰ স্বাধীনতা"
+    },
+    {
+        "id": "amendment-42",
+        "number": 42,
+        "fullName": "The Constitution (Forty-second Amendment) Act, 1976",
+        "titleAs": "চৌচল্লিশ সংশোধনী",
+        "titleEn": "Forty-second Amendment",
+        "year": 1976,
+        "subjectAs": "সংবিধানৰ সৰ্ববৃহৎ সংশোধনী"
+    }
+]
