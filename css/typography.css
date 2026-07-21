@@ -1,0 +1,178 @@
+/* Base Typography */
+body {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+/* Heading Styles */
+.heading-display {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+}
+
+.heading-xl {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--text-primary);
+}
+
+.heading-lg {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--text-primary);
+}
+
+.heading-md {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--text-primary);
+}
+
+.heading-sm {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+
+.heading-xs {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Body Text */
+.body-lg {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+.body-md {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+.body-sm {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.body-xs {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--text-tertiary);
+}
+
+/* Legal Text - For reading articles/sections */
+.legal-text {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text-primary);
+    text-align: justify;
+    hyphens: auto;
+}
+
+.legal-text p {
+    margin-bottom: 1rem;
+    text-indent: 2rem;
+}
+
+.legal-text p:first-child {
+    text-indent: 0;
+}
+
+.legal-text .clause {
+    margin-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    text-indent: 0;
+}
+
+.legal-text .sub-clause {
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+    text-indent: 0;
+}
+
+.legal-text .proviso {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--brand-gold);
+    font-style: italic;
+}
+
+.legal-text .explanation {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.legal-text .illustration {
+    margin-left: 1.5rem;
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* Label / Tag */
+.label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-tertiary);
+}
+
+.label-gold {
+    color: var(--brand-gold-dark);
+}
+
+.label-navy {
+    color: var(--brand-navy);
+}
+
+/* Meta Text */
+.meta {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    line-height: 1.5;
+}
+
+/* Assamese Specific */
+.as-text {
+    font-family: var(--font-sans);
+}
+
+.as-serif {
+    font-family: var(--font-serif);
+}
+
+/* English fallback for legal terms */
+.en-term {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-style: italic;
+    font-size: 0.9em;
+}
