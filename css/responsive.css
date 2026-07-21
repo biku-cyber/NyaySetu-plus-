@@ -1,0 +1,127 @@
+/* Tablet */
+@media (min-width: 768px) {
+    :root {
+        --content-max-width: 800px;
+    }
+
+    .page {
+        padding: var(--space-xl);
+    }
+
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .quick-actions {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .heading-display {
+        font-size: 2.5rem;
+    }
+
+    .heading-xl {
+        font-size: 2rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    :root {
+        --content-max-width: 900px;
+    }
+
+    .page {
+        padding: var(--space-2xl);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .law-card {
+        padding: var(--space-xl);
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1280px) {
+    :root {
+        --content-max-width: 1000px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+    .quick-actions {
+        grid-template-columns: repeat(2, 1fr);
+        padding: var(--space-md);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heading-display {
+        font-size: 1.5rem;
+    }
+
+    .page {
+        padding: var(--space-md);
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* High Contrast */
+@media (prefers-contrast: high) {
+    :root {
+        --border-subtle: #000;
+        --text-tertiary: #333;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .app-header,
+    .bottom-nav,
+    .reading-toolbar,
+    .search-overlay,
+    .menu-drawer,
+    .toast-container {
+        display: none !important;
+    }
+
+    .main-content {
+        padding: 0;
+    }
+
+    .page {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+}
