@@ -1,0 +1,77 @@
+:root {
+    /* Brand Colors */
+    --brand-navy: #1a2332;
+    --brand-navy-light: #2a3542;
+    --brand-navy-dark: #0f1520;
+    --brand-gold: #c9a961;
+    --brand-gold-light: #d4b87a;
+    --brand-gold-dark: #a8893f;
+    --brand-cream: #faf9f6;
+    --brand-paper: #f5f2eb;
+    --brand-red: #8b2e2e;
+    --brand-green: #2e5e3e;
+
+    /* Semantic Colors - Light Theme */
+    --bg-primary: #faf9f6;
+    --bg-secondary: #f0ede5;
+    --bg-tertiary: #e8e4da;
+    --bg-card: #ffffff;
+    --bg-elevated: #ffffff;
+    --bg-overlay: rgba(26, 35, 50, 0.5);
+
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4a4a;
+    --text-tertiary: #7a7a7a;
+    --text-inverse: #ffffff;
+    --text-accent: var(--brand-navy);
+
+    --border-primary: #e0dcd2;
+    --border-secondary: #d0ccc2;
+    --border-subtle: #ece8df;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.1);
+
+    /* Typography */
+    --font-serif: 'Noto Serif Assamese', 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Noto Sans Assamese', 'Inter', system-ui, sans-serif;
+    --font-display: 'Cormorant Garamond', 'Noto Serif Assamese', Georgia, serif;
+
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+
+    /* Layout */
+    --header-height: 64px;
+    --bottom-nav-height: 68px;
+    --content-max-width: 720px;
+    --sidebar-width: 280px;
+
+    /* Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 18px;
+    --radius-full: 9999px;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-base: 250ms ease;
+    --transition-slow: 400ms ease;
+
+    /* Z-index */
+    --z-base: 1;
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-overlay: 300;
+    --z-drawer: 400;
+    --z-modal: 500;
+    --z-toast: 600;
+}
