@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="as" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="ন্যায়সেতু — ভাৰতৰ সংবিধান আৰু প্ৰধান আইনসমূহৰ অসমীয়া ডিজিটেল আইনী গ্ৰন্থাগাৰ">
+    <meta name="theme-color" content="#1a2332">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>ন্যায়সেতু — NyaySetu | অসমীয়া আইনী গ্ৰন্থাগাৰ</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/light-theme.css">
+    <link rel="stylesheet" href="/css/dark-theme.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Assamese:wght@400;500;600;700&family=Noto+Sans+Assamese:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="loading-screen">
+            <div class="loading-content">
+                <img src="/assets/emblems/ashoka-emblem.svg" alt="" class="loading-emblem" width="80" height="80">
+                <h1 class="loading-title">ন্যায়সেতু</h1>
+                <p class="loading-subtitle">NyaySetu</p>
+                <div class="loading-bar">
+                    <div class="loading-bar-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- App Header -->
+        <header id="app-header" class="app-header">
+            <div class="header-inner">
+                <button class="header-back-btn" id="header-back-btn" aria-label="পিছলৈ যোৱা">
+                    <img src="/assets/icons/arrow-left.svg" alt="" width="20" height="20">
+                </button>
+                <div class="header-brand">
+                    <img src="/assets/emblems/ashoka-emblem.svg" alt="" class="header-emblem" width="28" height="28">
+                    <div class="header-title-group">
+                        <h1 class="header-title" id="header-title">ভাৰতৰ সংবিধান</h1>
+                        <p class="header-subtitle" id="header-subtitle">Constitution of India</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="header-action-btn" id="search-btn" aria-label="সন্ধান">
+                        <img src="/assets/icons/search.svg" alt="" width="20" height="20">
+                    </button>
+                    <button class="header-action-btn" id="menu-btn" aria-label="মেণু">
+                        <img src="/assets/icons/menu-dots.svg" alt="" width="20" height="20">
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content" class="main-content">
+            <!-- Pages rendered here by router -->
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav id="bottom-nav" class="bottom-nav">
+            <a href="#/" class="nav-item active" data-route="/">
+                <img src="/assets/icons/home.svg" alt="" width="22" height="22">
+                <span>ঘৰ</span>
+            </a>
+            <a href="#/search" class="nav-item" data-route="/search">
+                <img src="/assets/icons/search.svg" alt="" width="22" height="22">
+                <span>সন্ধান</span>
+            </a>
+            <a href="#/bookmarks" class="nav-item" data-route="/bookmarks">
+                <img src="/assets/icons/bookmark.svg" alt="" width="22" height="22">
+                <span>বুকমাৰ্ক</span>
+            </a>
+            <a href="#/settings" class="nav-item" data-route="/settings">
+                <img src="/assets/icons/settings.svg" alt="" width="22" height="22">
+                <span>ছেটিংছ</span>
+            </a>
+        </nav>
+
+        <!-- Search Overlay -->
+        <div id="search-overlay" class="search-overlay" hidden>
+            <div class="search-overlay-inner">
+                <div class="search-header">
+                    <input type="text" id="search-input" class="search-input" placeholder="আইন, ধাৰা, অনুচ্ছেদ সন্ধান কৰক..." autocomplete="off">
+                    <button class="search-close-btn" id="search-close-btn" aria-label="বন্ধ কৰক">
+                        <img src="/assets/icons/close.svg" alt="" width="20" height="20">
+                    </button>
+                </div>
+                <div id="search-results" class="search-results"></div>
+            </div>
+        </div>
+
+        <!-- Menu Drawer -->
+        <div id="menu-drawer" class="menu-drawer" hidden>
+            <div class="menu-drawer-overlay" id="menu-drawer-overlay"></div>
+            <div class="menu-drawer-content">
+                <div class="menu-drawer-header">
+                    <h2>মেণু</h2>
+                    <button class="menu-close-btn" id="menu-close-btn" aria-label="বন্ধ কৰক">
+                        <img src="/assets/icons/close.svg" alt="" width="20" height="20">
+                    </button>
+                </div>
+                <nav class="menu-nav">
+                    <a href="#/constitution" class="menu-item">
+                        <img src="/assets/icons/constitution.svg" alt="" width="20" height="20">
+                        <span>সংবিধান</span>
+                    </a>
+                    <a href="#/bns" class="menu-item">
+                        <img src="/assets/icons/law.svg" alt="" width="20" height="20">
+                        <span>ভাৰতীয় ন্যায় সংহিতা (BNS)</span>
+                    </a>
+                    <a href="#/bnss" class="menu-item">
+                        <img src="/assets/icons/law.svg" alt="" width="20" height="20">
+                        <span>ভাৰতীয় নাগৰিক সুৰক্ষা সংহিতা (BNSS)</span>
+                    </a>
+                    <a href="#/bsa" class="menu-item">
+                        <img src="/assets/icons/law.svg" alt="" width="20" height="20">
+                        <span>ভাৰতীয় সাক্ষ্য অধিনিয়ম (BSA)</span>
+                    </a>
+                    <a href="#/crpc" class="menu-item">
+                        <img src="/assets/icons/law.svg" alt="" width="20" height="20">
+                        <span>ফৌজদাৰী কাৰ্যবিধি সংহিতা (CrPC)</span>
+                    </a>
+                    <a href="#/ipc" class="menu-item">
+                        <img src="/assets/icons/law.svg" alt="" width="20" height="20">
+                        <span>ভাৰতীয় দণ্ডবিধি (IPC)</span>
+                    </a>
+                    <div class="menu-divider"></div>
+                    <a href="#/bookmarks" class="menu-item">
+                        <img src="/assets/icons/bookmark.svg" alt="" width="20" height="20">
+                        <span>বুকমাৰ্ক</span>
+                    </a>
+                    <a href="#/recent" class="menu-item">
+                        <img src="/assets/icons/clock.svg" alt="" width="20" height="20">
+                        <span>শেহতীয়া</span>
+                    </a>
+                    <a href="#/about" class="menu-item">
+                        <img src="/assets/icons/info.svg" alt="" width="20" height="20">
+                        <span>বিষয়ে</span>
+                    </a>
+                    <a href="#/disclaimer" class="menu-item">
+                        <img src="/assets/icons/disclaimer.svg" alt="" width="20" height="20">
+                        <span>দায়বদ্ধতা অস্বীকাৰ</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Toast Notifications -->
+        <div id="toast-container" class="toast-container"></div>
+    </div>
+
+    <script src="/js/constants.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/storage.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/loader.js"></script>
+    <script src="/js/bookmarks.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/reader.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/router.js"></script>
+    <script src="/js/modules/constitution.js"></script>
+    <script src="/js/modules/amendments.js"></script>
+    <script src="/js/modules/schedules.js"></script>
+    <script src="/js/modules/bns.js"></script>
+    <script src="/js/modules/bnss.js"></script>
+    <script src="/js/modules/ipc.js"></script>
+    <script src="/js/modules/crpc.js"></script>
+    <script src="/js/modules/bsa.js"></script>
+    <script src="/js/app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW registration failed:', err));
+        }
+    </script>
+</body>
+</html>
