@@ -1,0 +1,23 @@
+{
+    "id": "chapter-1",
+    "number": 1,
+    "titleAs": "প্ৰাৰম্ভিক",
+    "titleEn": "Preliminary",
+    "overviewAs": "এই অধ্যায়ত সংহিতাৰ নাম, প্ৰযোজ্যতা আৰু সাধাৰণ ব্যাখ্যা অন্তৰ্ভুক্ত।",
+    "sections": [
+        {
+            "id": "section-1",
+            "number": 1,
+            "titleAs": "চুটি নাম, বিস্তাৰ আৰু প্ৰাৰম্ভ",
+            "titleEn": "Short title, extent and commencement",
+            "summaryAs": "এই সংহিতাক ভাৰতীয় ন্যায় সংহিতা, ২০২৩ বুলি কোৱা হ'ব।"
+        },
+        {
+            "id": "section-2",
+            "number": 2,
+            "titleAs": "সংজ্ঞা",
+            "titleEn": "Definitions",
+            "summaryAs": "এই সংহিতাত ব্যৱহৃত শব্দসমূহৰ সংজ্ঞা।"
+        }
+    ]
+}
