@@ -1,0 +1,327 @@
+/* App-specific styles that tie everything together */
+
+/* Page visibility */
+.page-view {
+    display: none;
+}
+
+.page-view.active {
+    display: block;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-primary);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border-secondary);
+}
+
+/* Selection highlight for legal text */
+.legal-text ::selection,
+.reading-content ::selection {
+    background: var(--brand-gold-light);
+    color: var(--text-primary);
+}
+
+/* Focus states for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 2px solid var(--brand-gold);
+    outline-offset: 2px;
+}
+
+/* Smooth page transitions */
+.main-content {
+    transition: opacity var(--transition-fast);
+}
+
+.main-content.loading {
+    opacity: 0.5;
+}
+
+/* Card hover states */
+.law-card, .part-card, .chapter-card, .article-card, .section-card,
+.bookmark-card, .amendment-card, .schedule-card {
+    will-change: transform;
+}
+
+/* Ensure images don't break layout */
+img {
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* Prevent text overflow */
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Status indicators */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.status-badge.active {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-badge.repealed {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.status-badge.amended {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+/* Reading progress bar */
+.reading-progress {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--border-subtle);
+    z-index: var(--z-sticky);
+}
+
+.reading-progress-fill {
+    height: 100%;
+    background: var(--brand-gold);
+    width: 0%;
+    transition: width 100ms linear;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: calc(var(--bottom-nav-height) + var(--space-lg));
+    right: var(--space-lg);
+    width: 44px;
+    height: 44px;
+    background: var(--brand-navy);
+    color: var(--text-inverse);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all var(--transition-base);
+    z-index: var(--z-base);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--brand-navy-light);
+    transform: translateY(-2px);
+}
+
+/* Bookmark button in reading view */
+.bookmark-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-full);
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+}
+
+.bookmark-btn:hover {
+    background: var(--bg-tertiary);
+}
+
+.bookmark-btn.active {
+    background: var(--brand-gold-light);
+    color: var(--brand-navy);
+}
+
+.bookmark-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Chapter overview box */
+.chapter-overview {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    border-left: 3px solid var(--brand-gold);
+}
+
+.chapter-overview-title {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.chapter-overview-text {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Section navigation (prev/next) */
+.section-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--border-subtle);
+}
+
+.section-nav-btn {
+    flex: 1;
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-align: left;
+}
+
+.section-nav-btn:hover {
+    background: var(--bg-tertiary);
+}
+
+.section-nav-btn.next {
+    text-align: right;
+}
+
+.section-nav-label {
+    font-size: 0.72rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+}
+
+.section-nav-title {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+/* Amendment detail sections */
+.amendment-section {
+    margin-bottom: var(--space-xl);
+}
+
+.amendment-section-title {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.amendment-section-content {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+.amendment-section-content p {
+    margin-bottom: 1rem;
+}
+
+/* Case reference card */
+.case-card {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    padding: var(--space-md) var(--space-lg);
+    margin-bottom: var(--space-sm);
+    border-left: 3px solid var(--brand-navy);
+}
+
+.case-card-title {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.case-card-citation {
+    font-size: 0.78rem;
+    color: var(--text-tertiary);
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+/* Glossary term */
+.glossary-term {
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.glossary-term:last-child {
+    border-bottom: none;
+}
+
+.glossary-term-word {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--brand-navy);
+    margin-bottom: 4px;
+}
+
+.glossary-term-def {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
