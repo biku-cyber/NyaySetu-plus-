@@ -1,0 +1,26 @@
+[
+    {
+        "id": "part-1",
+        "number": 1,
+        "titleAs": "সংঘ আৰু ইয়াৰ ক্ষেত্ৰ",
+        "titleEn": "The Union and its Territory",
+        "articles": ["article-1", "article-2", "article-3", "article-4"],
+        "articleCount": 4
+    },
+    {
+        "id": "part-2",
+        "number": 2,
+        "titleAs": "নাগৰিকত্ব",
+        "titleEn": "Citizenship",
+        "articles": ["article-5", "article-6", "article-7", "article-8", "article-9", "article-10", "article-11"],
+        "articleCount": 7
+    },
+    {
+        "id": "part-3",
+        "number": 3,
+        "titleAs": "মৌলিক অধিকাৰ",
+        "titleEn": "Fundamental Rights",
+        "articles": ["article-12", "article-13", "article-14", "article-15", "article-16", "article-17", "article-18", "article-19", "article-20", "article-21", "article-22", "article-23", "article-24", "article-25", "article-26", "article-27", "article-28", "article-29", "article-30", "article-31", "article-32"],
+        "articleCount": 21
+    }
+]
