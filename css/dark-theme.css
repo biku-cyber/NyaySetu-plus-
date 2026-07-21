@@ -1,0 +1,71 @@
+[data-theme="dark"] {
+    --bg-primary: #0f1520;
+    --bg-secondary: #1a2332;
+    --bg-tertiary: #252f3e;
+    --bg-card: #1a2332;
+    --bg-elevated: #252f3e;
+    --bg-overlay: rgba(0, 0, 0, 0.7);
+
+    --text-primary: #e8e4da;
+    --text-secondary: #b0a999;
+    --text-tertiary: #7a7468;
+    --text-inverse: #0f1520;
+    --text-accent: var(--brand-gold-light);
+
+    --border-primary: #2a3542;
+    --border-secondary: #353f4e;
+    --border-subtle: #252f3e;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .app-header {
+    background: var(--bg-primary);
+    border-bottom-color: var(--border-subtle);
+}
+
+[data-theme="dark"] .bottom-nav {
+    background: var(--bg-card);
+    border-top-color: var(--border-subtle);
+}
+
+[data-theme="dark"] .law-card::before {
+    background: var(--brand-gold);
+}
+
+[data-theme="dark"] .part-number,
+[data-theme="dark"] .chapter-number,
+[data-theme="dark"] .schedule-number {
+    background: var(--brand-gold-dark);
+    color: var(--bg-primary);
+}
+
+[data-theme="dark"] .home-hero {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    border: 1px solid var(--border-subtle);
+}
+
+[data-theme="dark"] .loading-screen {
+    background: var(--bg-primary);
+}
+
+[data-theme="dark"] .loading-title {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .search-overlay {
+    background: var(--bg-primary);
+}
+
+[data-theme="dark"] .menu-drawer-content {
+    background: var(--bg-card);
+}
+
+[data-theme="dark"] .toast {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    border: 1px solid var(--border-subtle);
+}
